@@ -1,0 +1,20 @@
+sources:
+  - name: jobtech_data
+    description: "Raw data from JobTech API"
+    schema: staging # Detta ska matcha där din data faktiskt ligger
+    tables:
+      - name: job_ads
+        description: "Job advertisements from JobTech API"
+        identifier: job_ads # Exakt tabellnamn i databasen
+        columns:
+          - name: id
+            description: "Unique job advertisement ID"
+            tests:
+              - unique
+              - not_null
+          - name: headline
+            description: "Job advertisement headline"
+          - name: description__text
+            description: "Job description text"
+          - name: employer__name
+            description: "Employer name"
