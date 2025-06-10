@@ -1,0 +1,54 @@
+# ===== CORE DATA PIPELINE =====
+# Database
+duckdb>=0.9.0
+
+# Data Loading Tool (dlt)
+dlt[duckdb]>=0.4.0
+
+# Data Build Tool (dbt)
+dbt-core>=1.6.0
+dbt-duckdb>=1.6.0
+
+# ===== DATA PROCESSING =====
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0
+
+# ===== API & WEB =====
+requests>=2.31.0
+httpx>=0.25.0
+
+# ===== DASHBOARD & VISUALIZATION =====
+streamlit>=1.28.0
+plotly>=5.17.0
+altair>=5.1.0
+
+# ===== UTILITIES =====
+python-dotenv>=1.0.0
+pydantic>=2.4.0
+loguru>=0.7.0
+
+# ===== DEVELOPMENT & TESTING =====
+pytest>=7.4.0
+black>=23.9.0
+isort>=5.12.0
+
+# ===== JOBTECH SPECIFIC =====
+# For date/time handling with Swedish job data
+python-dateutil>=2.8.0
+
+# For data validation
+cerberus>=1.3.0
+
+# For configuration management
+pyyaml>=6.0.0
+
+# ===== OPTIONAL ENHANCEMENTS =====
+# For better progress bars during data loading
+tqdm>=4.66.0
+
+# For caching API responses
+requests-cache>=1.1.0
+
+# For data profiling and quality checks
+great-expectations>=0.17.0
